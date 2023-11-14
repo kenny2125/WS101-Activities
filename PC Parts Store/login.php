@@ -7,8 +7,9 @@
   <title>PC Parts Store</title>
   <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
-<body>
-
+<div class="body">
+<body style="display:flex">
+</div>
 
 <div>
   <h1>PC Parts Picker Log In</h1>

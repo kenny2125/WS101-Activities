@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  background-color: #081b29;
+  color: #ededed;
+}
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+.logo{
+  font-size: 25px;
+  color: #ededed;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 35px;
+}
+.navbar a{
+  font-size: 18px;
+  color: #ededed;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 35px;
+  transition: .3s;
+}
+.navbar a:hover,
+.navbar a.active{
+  color:#00abf0;
+}
+.aboutMe{
+  height: 100vh;
+  background: url(kenny.png) no-repeat;
+  padding: 20;
+  display: flex;
+  align-items: center;
+  padding: 0 10%;
+}
+.aboutMeContent{
+  max-width: 600px;
+}
+.aboutMeContent h1{
+  font-size: 56px;
+  font-weight: 700;
+}
+.aboutMeContent h3{
+  font-size: 20px;
+  font-weight: 700;
+  color: #00abf0;
+}
+.aboutMeContent{
+  font-size: 14px;
+  font-weight: 500;
+}
+.home-sci{
+  position: absolute;
+  bottom: 40px;
+  width: auto;
+}
+.home-sci a{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: 2px solid #00abf0;
+  border-radius: 50%;
+  font-size: 20px;
+  color: #00abf0;
+  text-decoration: none;
+}

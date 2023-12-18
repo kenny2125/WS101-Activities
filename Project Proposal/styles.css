@@ -91,15 +91,16 @@ body, html {
 .bgimg-3 {
   position: relative;
   z-index: 1;
-  background-color: gray;
+  background-image: url(Images/TECHBG.jpg);
   min-height: 400px;
 }
 
 .bgimg-4 {
   position: relative;
   z-index: 1;
-  background-color: rgb(236, 216, 171);
+  background-image: url(Images/CODES.jpg);
   min-height: 400px;
+  filter: brightness(90%) contrast(120%);
 }
 
 .caption {
@@ -171,11 +172,17 @@ h3 {
   font-size: 72px;
   margin-bottom: 10px;
   color: white;
+  padding: 5px;
+  background-color: gray;
+  border-radius: 10px;
 }
 
 .item p {
   font-size: 24px;
   color: white;
+  padding: 5px;
+  background-color: gray;
+  border-radius: 10px;
 }
 
 .text-container {
@@ -212,10 +219,67 @@ h3 {
   font-size: 24px; /* Adjust font size for title */
   margin-bottom: 10px;
   color: white;
+  padding: 5px;
+  background-color: gray;
+  border-radius: 10px;
 }
 
 .grid-item p {
   font-size: 16px; /* Adjust font size for description */
   color: white;
   font-style: italic;
+  padding: 5px;
+  background-color: gray;
+  border-radius: 10px;
+}
+
+.contact-box {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  width: 300px;
+  margin: 0 auto;
+  text-align: center; /* Center align content */
+}
+
+.footer {
+  background-color: #333;
+  color: black;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.contact-box {
+  display: inline-block;
+  border-radius: 5px;
+  background-color: #ffffff;
+
+  width: 80%;
+  max-width: auto;
+}
+
+.contact-box h2 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.contact-info p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.social-media {
+  margin-top: 20px;
+}
+
+.social-media a {
+  margin: 0 5px;
+  display: inline-block;
+}
+
+.social-media img {
+  width: 100px;
+  height: 100px;
+  vertical-align: middle;
 }

@@ -66,7 +66,7 @@ body, html {
 
 
 /*PARALLAX SCROLLING*/
-.bgimg-1, .bgimg-2, .bgimg-3 {
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
   position: absolute;
   background-attachment: fixed;
   background-position: center;
@@ -89,7 +89,16 @@ body, html {
 }
 
 .bgimg-3 {
-  background-image: url("Images/03_FOOTER.png");
+  position: relative;
+  z-index: 1;
+  background-color: gray;
+  min-height: 400px;
+}
+
+.bgimg-4 {
+  position: relative;
+  z-index: 1;
+  background-color: rgb(236, 216, 171);
   min-height: 400px;
 }
 
@@ -135,3 +144,78 @@ h3 {
   }
 }
 
+.container {
+  display: flex;
+  flex-direction: rows; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+}
+
+.item {
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center; /* Center text content */
+  width: 100%; /* Make items take full width */
+  box-sizing: border-box; /* Include padding in item's width */
+}
+
+.item img {
+  max-width: 100%; /* Ensure the image doesn't exceed the container width */
+  height: auto; /* Maintain aspect ratio */
+  display: block;
+  margin: 0 auto; /* Center the image horizontally */
+  padding: 10px; /* Optional padding around the image */
+  margin-bottom: 10px;
+}
+
+.item h2 {
+  font-size: 72px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.item p {
+  font-size: 24px;
+  color: white;
+}
+
+.text-container {
+  width: 100%;
+  font-size: 80px;
+  display: flex;
+  justify-content: center;
+  
+}
+
+/* New class for 2x2 grid container */
+.container-2x2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
+  gap: 20px; /* Gap between grid items */
+}
+
+.grid-item {
+  padding: 20px;
+  text-align: center; /* Center text content */
+  box-sizing: border-box; /* Include padding in item's width */
+}
+
+.grid-item img {
+  width: 100%; /* Ensure the image fills the item's width */
+  height: auto; /* Maintain aspect ratio */
+  display: block;
+  margin: 0 auto; /* Center the image horizontally */
+  padding: 10px; /* Optional padding around the image */
+  margin-bottom: 10px;
+}
+
+.grid-item h2 {
+  font-size: 24px; /* Adjust font size for title */
+  margin-bottom: 10px;
+  color: white;
+}
+
+.grid-item p {
+  font-size: 16px; /* Adjust font size for description */
+  color: white;
+  font-style: italic;
+}

@@ -14,12 +14,11 @@ body, html {
   position: relative;
   z-index: 2; /* Set a higher z-index */
   overflow: hidden;
-  margin-right: 30px;
-  padding: 5px 10px;
+  padding: 30px;
   
 }
 
-/* Style the header links */
+
 .header a {
   float: left;
   color: white;
@@ -31,9 +30,9 @@ body, html {
   border-radius: 4px;
 }
 
-/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
-.header a.logo {
-  font-size: 25px;
+
+.header .logo {
+  font-size: 32px;
   font-weight: bold;
 }
 
@@ -68,7 +67,7 @@ body, html {
 
 
 /*PARALLAX SCROLLING*/
-.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+.overview, .bgimg-2, .bgimg-3, .bgimg-4 {
   position: absolute;
   background-attachment: fixed;
   background-position: center;
@@ -76,12 +75,14 @@ body, html {
   background-size: cover;
 
 }
-.bgimg-1 {
+.overview {
   position: relative;
   z-index: 1;
-  background-image: url("Images/Homepage.png");
+  background-image: url("Images/01_HEADER-NAV.png");
   min-height: 100%;
+  background-position: 0 -100px; /* Set the background position to top-left */
 }
+
 
 .bgimg-2 {
   position: relative;
@@ -117,15 +118,11 @@ body, html {
 
 .caption span.border {
   color: #fff;
-  padding: 18px;
-  margin-left: 5px;
   font-size: 72px;
-  letter-spacing: 2px;
 }
 
 .caption span.desc {
   color: #89AEC9;
-  padding: 18px;
   margin-left: 5px;
   font-size: 32px;
   font-style: italic;
@@ -145,16 +142,21 @@ h3 {
 
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1024px) {
-  .bgimg-1, .bgimg-2, .bgimg-3 {
+  .overview, .bgimg-2, .bgimg-3 {
     background-attachment: scroll;
   }
 }
 
 .content{
-  color: white;background-color:#6f6f6f;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.9);
   text-align:center;
   padding:5px ;
   text-align: justify;
+  display: flex;
+  min-height: 820px;
+  flex-direction: rows; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
 }
 
 .container {
@@ -201,6 +203,9 @@ h3 {
   width: 100%;
   font-size: 72px;
   justify-content: center;
+  color:#ddd;
+  background-color:#282E34;
+  text-align:center;
 }
 
 /* Update the CSS class names */

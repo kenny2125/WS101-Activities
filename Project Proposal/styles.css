@@ -1,10 +1,12 @@
-
 body, html {
   font-family: 'League Spartan';font-size: 22px;
   height: 100%;
+  width: 1920px;
   margin: 0;
+  padding: 0;
   font: 400 15px/1.8 "Lato", sans-serif;
   color: #777;
+  overflow-x: hidden; /* Prevent horizontal scrollbar */
 }
 
 /*HEADER SECTION*/
@@ -149,7 +151,10 @@ h3 {
 }
 
 .content{
-  color: white;background-color:#6f6f6f;text-align:center;padding:5px 200px;text-align: justify;
+  color: white;background-color:#6f6f6f;
+  text-align:center;
+  padding:5px ;
+  text-align: justify;
 }
 
 .container {

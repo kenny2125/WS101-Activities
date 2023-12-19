@@ -87,8 +87,10 @@ body, html {
 .bgimg-2 {
   position: relative;
   z-index: 1;
+  padding-top: 100px;
   background-image: url("Images/02_SECTION_ARTICLE.png");
-  min-height: 1000px;
+  min-height: 920px;
+  margin-bottom: 0;
 }
 
 .bgimg-3 {
@@ -265,7 +267,8 @@ h3 {
   flex-direction: row; /* Arrange items in a row */
   justify-content: center; /* Center items horizontally */
   align-items: center; /* Center items vertically */
-  margin: 20px 0; /* Add margin for spacing */
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .container-5 .item {

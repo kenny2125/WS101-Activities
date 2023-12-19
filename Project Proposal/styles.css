@@ -1,12 +1,9 @@
 body, html {
   font-family: 'League Spartan';font-size: 22px;
-  height: 100%;
-  width: 1920px;
   margin: 0;
   padding: 0;
   font: 400 15px/1.8 "Lato", sans-serif;
   color: #777;
-  overflow-x: hidden; /* Prevent horizontal scrollbar */
 }
 
 /*HEADER SECTION*/
@@ -169,7 +166,7 @@ h3 {
 
 .item {
   padding: 10px;
-  margin-bottom: px;
+  margin-bottom: 20px; /* Adjust as needed */
   text-align: center; /* Center text content */
   width: 100%; /* Make items take full width */
   box-sizing: border-box; /* Include padding in item's width */
@@ -206,7 +203,7 @@ h3 {
   font-size: 72px;
   justify-content: center;
   color:#ddd;
-  background-color:#282E34;
+  background-color:#0a1f31;
   text-align:center;
 }
 
@@ -336,7 +333,7 @@ h3 {
 
 .contact-box {
   color: white;
-  background-color: rgb(66, 66, 66);
+  background-color: #0a1f31;
   padding: 20px;
   width: auto;
   margin: 0 auto;
@@ -344,7 +341,6 @@ h3 {
 }
 
 .footer {
-  background-color: white;
   color: black;
   padding: 20px 0;
   text-align: center;
